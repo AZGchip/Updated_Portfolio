@@ -1,7 +1,6 @@
 
 .card-img-top {
     width: 100%;
-   
     object-fit: cover;
 }
 .logopic{
@@ -10,14 +9,11 @@
 @media only screen and (max-width: 768px){
     .title1{font-size:50px ;
         text-align: center;
-    }
-    
-    
+    }  
 }
 body{
     background-image:url(../images/303.Jpg) ;
     background-attachment: fixed;
-    
 }
 .container{
     background-color: white;
@@ -36,11 +32,7 @@ body{
 	font-size: 40px;
 	text-shadow: -1px 1px 0 #000,
 				  1px 1px 0 #000,
-				 1px -1px 0 #000;
-				  
-}
-.mainarea{
-    background-color: rgb(150, 150, 150);
+				 1px -1px 0 #000;			  
 }
 .card{
     margin-bottom: 2%;
