@@ -5,6 +5,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block">
                 <!-- hidden spacer to center brand on mobile --></span>
-            <a class="navbar-brand d-none d-lg-inline-block" href="#">
+            <a class="navbar-brand d-none d-lg-inline-block text-light " href="https://github.com/AZGchip">
                 Andrew Zinski
             </a>
             <h2 class="navbar-brand mx-auto d-lg-none d-inline-block navbar-dark">
@@ -40,18 +41,21 @@
         </div>
     </nav>
     <!-- main content -->
-    <div class="container">
+    <div class="container ">
         <div class="row mt-5">
-            <div class="col-md-8 ">
+            <div class="col-md-9 ">
                 <h1 class="title1 mt-5">Portfolio</h1>
+                <h5>A collection of some of my projects and class assignments</h5>
                 <hr>
                 <div class="row row-cols-1 row-cols-md-2">
                     <!-- trailes and ales card -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card col-md-5 px-0 mx-auto">
                         <img class="card-img-top" src="assets/images/New Bitmap Image.bmp" alt="ales and trails">
                         <div class="card-body">
-                            <h5 class="card-title">Trails & Ales (Collab) <button class="dropdown-toggle"
-                                    data-toggle="collapse" data-target="#trailsInfo"></button></h5>
+                             <!-- collapse button -->
+                            <h5 class="card-title">Trails & Ales (Collab) <button class="dropdown-toggle float-right"
+                                    data-toggle="collapse" data-target="#trailsInfo"></button>
+                                </h5>
                             <p class="card-text">
                                 A site utilizing web APIs to display the location of trails and
                                 breweries around a searched location on an interactive map.
@@ -68,17 +72,20 @@
                                 </p>
                             </div>
                             <!-- github links -->
-                            <a href="https://github.com/AZGchip/Ales-and-Trales" class="btn btn-primary">Github</a>
-                            <a href="https://azgchip.github.io/Ales-and-Trales/" class="btn btn-primary">Deployed
+                            <a href="https://github.com/AZGchip/Ales-and-Trales" class="btn btn-info">Github</a>
+                            <a href="https://azgchip.github.io/Ales-and-Trales/" class="btn btn-secondary">Deployed
                                 Site</a>
                         </div>
                     </div>
                     <!-- forcast card -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card col-md-5 px-0 mx-auto" >
                         <img class="card-img-top" src="assets/images/forcast.bmp" alt="Forcast_API">
                         <div class="card-body">
-                            <h5 class="card-title">Forcast_By_API<button class="dropdown-toggle" data-toggle="collapse"
-                                    data-target="#weather"></button></h5>
+                             <!-- collapse button -->
+                            <h5 class="card-title">Forcast_By_API<button class="dropdown-toggle float-right" data-toggle="collapse"
+                                    data-target="#weather"></button>
+                                </h5>
+                                    <!-- card short summary -->
                             <p class="card-text">
                                 A website that displays weather information of a searched location using OpenWeather's
                                 API.
@@ -93,17 +100,20 @@
                                 </p>
                             </div>
                             <!-- github links -->
-                            <a href="https://github.com/AZGchip/Forcast_By_Api" class="btn btn-primary">Github</a>
-                            <a href="https://azgchip.github.io/Forcast_By_Api/" class="btn btn-primary">Deployed
+                            <a href="https://github.com/AZGchip/Forcast_By_Api" class="btn btn-info">Github</a>
+                            <a href="https://azgchip.github.io/Forcast_By_Api/" class="btn btn-secondary">Deployed
                                 Site</a>
                         </div>
                     </div>
                     <!-- password card -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card col-md-5 px-0 mx-auto" >
                         <img class="card-img-top" src="assets/images/password.bmp" alt="password photo">
                         <div class="card-body">
+                             <!-- collapse button -->
                             <h5 class="card-title">Password_Generator<button class="dropdown-toggle float-right"
-                                    data-toggle="collapse" data-target="#password"></button></h5>
+                                    data-toggle="collapse" data-target="#password"></button>
+                                </h5>
+                                    <!-- card short summary -->
                             <p class="card-text">
                                 A website that creates a random password according to criteria provided by the user.
                             </p>
@@ -116,42 +126,68 @@
                             </div>
                             <!-- github links -->
                             <a href="https://github.com/AZGchip/String_Password_Generator"
-                                class="btn btn-primary">Github</a>
+                                class="btn btn-info">Github</a>
                             <a href="https://azgchip.github.io/String_Password_Generator/"
-                                class="btn btn-primary">Deployed site</a>
+                                class="btn btn-secondary">Deployed site</a>
+                        </div>
+                    </div>
+                    <!-- schedule card -->
+                    <div class="card col-md-5 px-0 mx-auto" >
+                        <img class="card-img-top" src="assets/images/schedule.bmp" alt="schedule photo">
+                        <div class="card-body">
+                            <!-- collapse button -->
+                            <h5 class="card-title">Password_Generator<button class="dropdown-toggle float-right"
+                                    data-toggle="collapse" data-target="#schedule"></button>
+                                </h5>
+                                <!-- card short summary -->
+                            <p class="card-text">
+                                A day planner website that allows for user input to be saved to local storage under a particular time. 
+                            </p>
+                            <!--collapsable  -->
+                            <div id="schedule" class="collapse">
+                                <p>
+                                   Each text box represents a time and will change from green to blue to red as the day progresses.
+                                    A segmented bar in each time box will  display how far along in the hour you are in 15 min segments.
+                                </p>
+                            </div>
+                            <!-- github links -->
+                            <a href="https://github.com/AZGchip/schedule_maker"
+                                class="btn btn-info">Github</a>
+                            <a href="https://azgchip.github.io/schedule_maker/"
+                                class="btn btn-secondary">Deployed site</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- side links -->
-            <div class="col-md-4 mt-5">
+            <div class="col-md-3 mt-5">
                 <div class="row">
-                    <h4 class="mt-4">
+                    <h4 class="mt-5">
                         Find Me On
                         <hr>
                     </h4>
                 </div>
                 <div class="row mt-4">
                     <!-- deviantart -->
-                    <a href="https://www.deviantart.com/azgchip/gallery/"><img class="icons"
+                    <a href="https://www.deviantart.com/azgchip/gallery/"><img class="icons mx-auto"
                             src="assets/images/Deviantart-icon.png" alt="Deviantart icon"></a>
                     <!-- Soundcloud -->
-                    <a href="https://soundcloud.com/azgchip"><img class="icons" src="assets/images/soundcloud.png"
+                    <a href="https://soundcloud.com/azgchip"><img class="icons mx-auto" src="assets/images/soundcloud.png"
                             alt="sound cloud icon"></a>
                     <!-- Youtube -->
-                    <a href="https://www.youtube.com/channel/UC42pkrN7h_DRmxSRpjuEsxw?"><img class="icons"
+                    <a href="https://www.youtube.com/channel/UC42pkrN7h_DRmxSRpjuEsxw?"><img class="icons mx-auto"
                             src="assets/images/Media-youtube-icon.png" alt="Youtube icon"></a>
                     <!-- Github -->
-                    <a href="https://github.com/AZGchip"><img class="icons" src="assets/images/git.png"
+                    <a href="https://github.com/AZGchip"><img class="icons mx-auto" src="assets/images/git.png"
                             alt="github icon"></a>
                     <!-- linkedin -->
-                    <a href="https://www.linkedin.com/in/andrew-zinski-9761751a1/"><img class="icons"
+                    <a href="https://www.linkedin.com/in/andrew-zinski-9761751a1/"><img class="icons mx-auto"
                             src="assets/images/linked.png" alt="linked in icon"></a>
                 </div>
             </div>
         </div>
         <nav class="navbar-expand-lg navbar-dark bg-dark fixed-bottom pt-1">
-            <p class="text-center text-light mt-0 pt-0">Email me at: andrew@zinski.net</p>
+            <p class="text-center text-secondary mt-0 pt-0">email: andrew@zinski.net</p>
         </nav>
 
 

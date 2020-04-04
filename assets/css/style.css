@@ -39,4 +39,10 @@ body{
 				 1px -1px 0 #000;
 				  
 }
-
+.mainarea{
+    background-color: rgb(150, 150, 150);
+}
+.card{
+    margin-bottom: 2%;
+    background-color: rgb(240, 240, 240);
+}
